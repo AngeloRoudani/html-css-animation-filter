@@ -111,3 +111,45 @@
         transform: rotate(0deg);
     }
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: whitespace;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes whitespace {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 80px;
+    }
+    50% {
+        margin-right: 80px;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: whitespace2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes whitespace2 {
+    0% {
+        margin-right: 0;
+    }
+    25% {
+        margin-right: 80px;
+    }
+    50% {
+        margin-left: 80px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
